@@ -46,9 +46,19 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'POST /create_student': 'StudentController.create',
+'POST /create_student': 'StudentController.create',
   'GET /manage_students': 'StudentController.read',
   'POST /update_student': 'StudentController.update',
-  'POST /delete_student': 'StudentController.delete'
+  'POST /delete_student': 'StudentController.delete',
+
+  'POST /create_grades': 'GradeController.create',
+  'GET /manage_grades': 'GradeController.read',
+  'POST /update_grades': 'GradeController.update',
+  'POST /delete_grades': 'GradeController.delete',
+
+  'POST /create_assignments': 'AssignmentController.create',
+  'GET /manage_assignments': 'AssignmentController.read',
+  'POST /update_assignments': 'AssignmentController.update',
+  'POST /delete_assignments': 'AssignmentController.delete'
 
 };
