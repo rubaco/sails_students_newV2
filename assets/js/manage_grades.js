@@ -41,9 +41,9 @@
 
 
 
+
     //add grade button functionality
     addGradeButton.click(function(){
-      alert("add Button!")
       manageGradeForm.attr("action", "/create_grades");
       manageGradeForm.dialog({
         title: "Add Record",

@@ -47,6 +47,8 @@ module.exports = {
   read: function (req, res) {
 
     client.get(endpoint, function (data, response) {
+        console.log("test read")
+        
         return res.view(view, {students: data});
     }).on('error', function (err) {
         return res.view(view, {error: { message: "There was an error getting the students"}});
